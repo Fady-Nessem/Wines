@@ -1,0 +1,370 @@
+<html>
+<head>
+  <title>Wines</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css" integrity="sha256-qQHUQX+gGGYfpC7Zdni08sr+h0ymXr0avmIASucY4FM=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <style>
+    .fa-arrow-alt-circle-up{
+      position: fixed;
+      right: 30;
+      bottom: 30;
+      font-size: 35px;
+      color: red;
+      visibility: hidden;
+      cursor: pointer;
+      z-index: 110;
+    }
+  .show{
+    visibility: visible !important;
+  }
+  </style>
+</head>
+<body>
+    <i class="fas fa-arrow-alt-circle-up"></i>
+<!-- Header -->
+  <header class="header">
+    <!-- Header Top -->
+    <div class="header-top">
+      <nav class="navbar navbar-expand-lg"> 
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="fas fa-heart"></i>
+              <span>Wish list</span>
+            </a>
+            <a class="nav-item nav-link" href="#">
+              <i class="fas fa-user-alt"></i>
+              <span>My Account</span>
+              <span class="caret"><i class="fas fa-angle-down"></i></span>
+            </a>
+            <ul class="dropdown">
+              <li class="dropdown-item1"><a href="#">Register</a></li>
+              <li class="dropdown-item1"><a href="#">login</a></li>         
+            </ul>
+            <a class="nav-link" href="#">
+              <i class="fas fa-shopping-cart"></i>
+              <span>hopping Cart</span>
+            </a>
+            <a class="nav-link" href="#">
+              <i class="fas fa-share"></i>
+              CheackOut</a>
+          </div>
+        </div>
+        <div class="top-right">
+          <a href="#">
+            <span>En</span>
+            <i class="fas fa-angle-down"></i>
+          </a>
+          <a href="#">
+            <span>$</span>
+            <i class="fas fa-angle-down"></i>
+          </a>
+        </div>
+      </nav>
+      
+    </div>                 <!-- END Header Top -->
+    <!-- Header Bottom -->
+    <div class="header-bottom">
+      <div class="row w-100">
+        <div class="col-xl-2 p-0">
+          <h2 class="logo text-center text-3rem mb-0">Wines</h2>
+          <h5 class="online text-uppercase text-center">online stores</h5>
+        </div>
+        <div class="col-xl-7 p-auto">
+          <nav class="navbar navbar-expand-lg"> 
+            <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#fady">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-nav" id="fady">
+              <a class="nav-item nav-link active" href="#">Red Wines</a>
+              <a id="btnGroupDrop1" class="home dropdown-toggle" data-hover="Home" href="#" data-toggle="dropdown">White</a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#"> Aenean Viverra</a>
+                  <a class="dropdown-item" href="#">Nullam Iaculis</a>
+                  <a class="dropdown-item" href="#">Phasellus Vel</a>
+                </div>
+              <a class="nav-item nav-link" href="#">Pink</a>
+              <a class="nav-item nav-link" href="#">Bubbly</a>
+              <a class="nav-item nav-link" href="#">Sparkling</a>
+              <a class="nav-item nav-link" href="#">Dessert</a>
+              <a class="nav-item nav-link" href="#">Wine Accessories</a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-xl-3">
+          <div class="search-bar">
+            <div class="search">
+              <input class="bg-dark" type="text" placeholder="Search">    
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          <div class="count">0</div>
+          </div>
+        </div>
+      </div>
+    </div>                 <!-- END Header Bottom -->
+  </header>          <!-- END Header -->
+<!-- Slider -->
+  <section class="Slider">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Images/slide-1-2050x898.jpg" class="d-block w-100" height="630" alt="Wines Picture">
+        <div class="carousel-caption">
+        <h2 class="carousel-titel">Wines</h2>
+        <p class="carousel-descrip">ONLINE STORE</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/slide-2-2050x898.jpg" class="d-block w-100" height="630" alt="Wines Picture">
+        <div class="carousel-caption">
+        <h2 class="carousel-titel">Wines</h2>
+        <p class="carousel-descrip">ONLINE STORE</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Images/slide-3-2050x898.jpg" class="d-block w-100" height="630" alt="Wines Picture">
+        <div class="carousel-caption">
+        <h2 class="carousel-titel">Wines</h2>
+        <p class="carousel-descrip">ONLINE STORE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>             <!-- END Slider -->
+<!-- Gallery-->
+<section class="gallery">
+  <div class="gallery-items">
+    <div class="item">
+      <img src="Images/banner-1-370x370.jpg">
+      <div>
+        <h2 class="item-titel">red wines</h2>
+        <p class="item-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor.</p>
+        <a class="item-link" href="#">Shop now!</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="Images/banner-2-370x370.jpg">
+      <h2 class="item-titel">WHITE WINES</h2>
+      <p class="item-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor.</p>
+      <a class="item-link" href="#">Shop now!</a>
+    </div>
+    <div class="item">
+      <img src="Images//banner-3-370x370.jpg">
+      <h2 class="item-titel">PINK WINES</h2>
+      <p class="item-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor.</p>
+      <a class="item-link" href="#">Shop now!</a>
+    </div>
+  </div>
+</section>           <!-- END Gallery -->
+<!-- Welcome -->
+<section class="welcome">
+  <div class="welcome-bg">
+    <div class="welcome-text">
+      <h2 class="welcome-word">WELCOME TO OUR STORE!</h2>
+      <h3 class="welcome-titel">EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA</h3>
+      <p class="welcome-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</section>          <!-- END Welcome -->
+<!-- FEATURED -->  
+<section class="featured">
+  <div class="featured-title">
+    <h4>featured</h4>
+  </div>
+  <div class="container">
+                 <!-- FEATURED items -->  
+    <div class="items">
+      <div class="content">
+        <div class="item item-1">
+          <div class="opacity">
+            <button class="add">Add To Cart</button>
+            <button class="view">Quik View</button>
+          </div>
+        </div>
+        <div class="details">
+          <h5 class="title">Aenean viverra</h5>
+          <h5 class="price">$100.00</h5>
+        </div>
+      </div>
+      <div class="content">
+        <div class="item item-2">
+          <div class="opacity">
+            <button class="add">Add To Cart</button>
+            <button class="view">Quik View</button>
+          </div>
+        </div>
+        <div class="details">
+          <h5 class="title">Consectetur adipiscing</h5>
+          <h5 class="price">$12 0.00</h5>
+        </div>
+      </div>
+      <div class="content">
+      <div class="item item-3">
+        <div class="opacity">
+          <button class="add">Add To Cart</button>
+          <button class="view">Quik View</button>
+        </div>
+      </div>
+      <div class="details">
+        <h5 class="title">Lorem euismod</h5>
+        <h5 class="price">$90.00</h5>
+      </div>
+      </div>
+      <div class="content">
+        <div class="item item-4">
+          <div class="opacity">
+            <button class="add">Add To Cart</button>
+            <button class="view">Quik View</button>
+          </div>
+        </div>
+      <div class="details">
+          <h5 class="title">Lorem euismod</h5>
+          <h5 class="price">$90.00</h5>
+      </div>  
+      </div>  
+    </div>
+               <!-- FEATURED items-2 -->  
+    <div class="items-2">
+      <div class="content">
+      <div class="item item-4">
+        <div class="opacity">
+          <button class="add">Add To Cart</button>
+          <button class="view">Quik View</button>
+        </div>
+      </div>
+      <div class="details">
+      <h5 class="title">Praesent imperdiet</h5>
+      <h5 class="price">$200.32</h5>
+      </div> 
+      </div> 
+      <div class="content">
+      <div class="item item-5">
+        <div class="opacity">
+          <button class="add">Add To Cart</button>
+          <button class="view">Quik View</button>
+        </div>
+      </div>
+      <div class="details">
+      <h5 class="title">Nullam iaculis</h5>
+      <h5 class="price">$90.28</h5>
+      </div> 
+      </div> 
+      <div class="content">
+      <div class="item item-6">
+        <div class="opacity">
+          <button class="add">Add To Cart</button>
+          <button class="view">Quik View</button>
+        </div>
+      </div>
+      <div class="details">
+      <h5 class="title">Mauris gravida</h5>
+      <h5 class="price">$180.90</h5>
+      </div>
+      </div>
+      <div class="content">
+        <div class="item item-7">
+          <div class="opacity">
+            <button class="add">Add To Cart</button>
+            <button class="view">Quik View</button>
+          </div>
+        </div>
+        <div class="details">
+          <h5 class="title">Lorem ceopsm</h5>
+          <h5 class="price">$80.99</h5>
+        </div>  
+        </div>   
+    </div>
+  </div>
+</section>           <!-- END About -->
+<!-- About -->
+<section class="about">
+  <div class="about-bg">
+    <div class="about-text">
+      <h2 class="about-word">About store</h2>
+      <h3 class="about-titel">EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA</h3>
+      <p class="about-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </div>
+</section>           <!-- END About -->
+<!-- SERVICE -->
+<section class="service">
+  <div class="service-text">
+    <h2 class="service-word">Our services</h2>
+    </div>
+  <div class="content">
+    <div class="left">
+      <h3 class="service-titel">EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA</h3>
+      <p class="service-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="right">
+      <h3 class="service-titel">EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA</h3>
+      <p class="service-descrip">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</section>           <!-- END Service -->
+<!-- Contact -->
+<section class="contact">
+  <div class="container">
+    <div>
+     <h5>Information</h5>
+      <ul class="info">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Delivery Information</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+    </div>
+    <div>
+      <h5>Customer Service</h5>
+      <ul class="cust">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Site Map</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Extras</h5>
+      <ul class="extra">
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Gift Vouchers</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Specials</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>My Account</h5>
+      <ul class="my-account">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Order History</a></li>
+        <li><a href="#">Wish List</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+  </div>
+</section>           <!-- END Contact -->
+<!-- Footer -->
+<footer>
+    Powered By OpenCart Wines Online Store © 2019
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+</footer>            <!-- END Footer -->
+  <script src="JS/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <script src="JS/script.js"></script>
+</body>
+</html>            

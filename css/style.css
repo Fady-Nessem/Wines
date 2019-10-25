@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}                     /* Header Top  */
+.header-top .navbar .navbar-nav .nav-link{
+    color: gray;
+    font-size: 13px;
+    margin: 0 10px;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+.header-top .navbar .navbar-nav .nav-link:hover{
+    color: white;
+    transition: 0.5s;
+}
+.header-top .navbar .navbar-nav .nav-link .fas{
+    display: none;
+    font-size: 20px;
+    margin-right: 10px ;
+}
+.header-top .navbar .navbar-nav .nav-item .caret i{
+    margin-left: 5px;
+    font-size: 15px;
+    display: inline;
+}
+.header-top .navbar .navbar-nav .dropdown{
+    display: none;
+    position: absolute;
+    top: 35;
+    left: 165;
+    width:200px;
+    border-radius: 5px;
+    background: gray;
+    padding: 5px 0;
+    z-index: 1;
+}
+.header-top .navbar .navbar-nav .dropdown .dropdown-item1{
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.header-top .navbar .navbar-nav .dropdown .dropdown-item1 a{
+    text-decoration: none;
+    color: lightgrey;
+    transition: 0.5s;
+}
+.header-top .navbar .navbar-nav .dropdown .dropdown-item1:hover{
+    background: red;
+    transition: 0.5s;
+}
+.header-top .navbar .navbar-nav .dropdown .dropdown-item1:hover a{
+    color: white; 
+    font-weight: 600;
+}
+.header-top .top-right{
+    margin:0 30px;
+}
+.header-top .top-right a{
+    margin-right: 30;
+    color: gray;
+    text-decoration: none;
+}                  
+.header-top .top-right span .fas{
+    font-weight: bold;
+    color: gray;
+}
+.header-top .top-right a:hover{
+    color: white;
+}                 /* END Header Top  */
+/* Header Bottom  */
+.header-bottom{
+    background: rgba(0, 0, 0, 0.75);
+}
+.header-bottom .col-xl-2 .logo{
+    font-size: 3.7rem;
+    font-weight: bold;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+}
+.header-bottom .col-xl-2 .online{
+    font-size: 0.6rem;
+    margin-top: -10;
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.header-bottom .col-xl-7{
+    padding: 0;
+}
+.header-bottom .col-xl-7 .navbar{
+    padding: 8px 0;
+}
+.header-bottom .navbar .navbar-nav a{
+    color: #828282;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 0px;
+    padding: 0 17px;
+}
+.header-bottom .navbar .navbar-nav a:hover{
+    color: white;
+}
+.header-bottom .navbar .navbar-nav .home{
+    padding: 8px;
+}
+.header-bottom .navbar .navbar-nav .dropdown-menu{
+    width: 200px;
+    left: 140;
+    top: 60;
+}
+.header-bottom .navbar .navbar-nav .dropdown-item{
+    margin: 0 !important;
+}
+.header-bottom .navbar .navbar-nav .dropdown-item:hover{
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+.header-bottom .col-xl-3{
+    padding: 5px;
+}
+.header-bottom .col-xl-3 .search{
+    display: flex;
+    margin: 20px 0;
+}
+.header-bottom .col-xl-3 .fa-search{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.header-bottom .col-xl-3 .fa-search:hover{
+    color: red;
+    font-size: 23px;
+}
+.header-bottom .col-xl-3 .bg-dark{
+    border: 0px;
+    background: transparent !important;
+    text-align: center;
+    outline: none;
+    color: rgb(233, 227, 227);
+}
+.header-bottom .col-xl-3 .search-bar .count{
+    position: absolute;
+    top: 15;
+    right: 25 ;
+    width: 40px;
+    height: 58px;
+    background-image: url(../Images/cart.png);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+  }              /* END Header Bottom  */     
+/* Slider */     
+.slider .carousel-inner .carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.slider .carousel-inner .carousel-caption .carousel-titel{
+    font-weight: bold;
+    font-size: 180px;
+    font-family: "Roboto Slab", sans-serif;
+    margin-bottom: 0;
+}
+.slider .carousel-inner .carousel-caption .carousel-descrip{
+    font-size: 18px;
+    letter-spacing: 16px;
+    word-spacing: 10px;
+    transform: translateY(-40px)
+}                       /* END Slider */     
+/* Gallery */
+.gallery{
+    padding: 100px 0;
+    background-image: url(../Images/shutterstock.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gallery .gallery-items{
+    display: flex;
+    justify-content: space-around;
+}
+.gallery .item{
+    width: 370px;
+    text-align: center;
+}
+.gallery .item-titel{
+    text-transform: uppercase;
+    font-size: 45px;
+    color: white;;
+}
+.gallery .item-descrip{
+    font-size: 1.1rem;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.gallery .item-link{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.gallery .item-link:hover{
+    cursor: pointer;
+    color: #cc1e1e;
+    font-weight: bold;
+}                        /* END Gallery */     
+/* Welcome */
+.welcome{
+   background-image: url(../Images/parallax-1-2050x1469.jpg);
+   background-attachment: fixed;
+   background-position: center;
+}
+.welcome .welcome-bg{
+    position: relative;
+    widows: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.welcome .welcome-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+    color: white
+}
+.welcome .welcome-word{
+    font-size: 80px;
+    font-family: Roboto Slab;
+    margin-bottom: 0;
+}
+.welcome .welcome-titel{
+    font-size: 20px;
+    font-family: Roboto Slab;
+    font-weight: 600
+}                      /* END Welcome */
+/* FEATURED */
+.featured{
+    padding: 50px;
+}
+.featured .featured-title h4{
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Roboto Slab;
+}
+/* FEATURED items */
+.featured .container .items , .items-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.featured .container .items .content{
+    margin: 0 30px;
+    background: lightgrey;
+}
+.featured .container .items .item{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    background-size: cover;
+}
+.featured .container .items .item-1{
+    background-image: url(../Images/Bottle-1.jpg);
+}
+.featured .container .items .item-2{
+    background-image: url(../Images/Bottle-2.jpg);
+}
+.featured .container .items .item-3{
+    background-image: url(../Images/Bottle-3.jpg);
+}
+.featured .container .items .item-4{
+    background-image: url(../Images/Bottle-7);
+}
+.featured .container .items .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.featured .container .items .opacity:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.50);
+}
+.featured .container .items .opacity button{
+    display: block;
+    padding: 5px 10px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    color: gray;
+    border: 2px solid gray;
+    margin: auto;
+    margin-top: 20%;
+    visibility: hidden;
+}
+.featured .container .items .opacity:hover button{
+    visibility: visible;
+}
+.featured .container .items .opacity button:hover{
+    color: white;
+    border: 2px solid white;
+}
+.featured .container .items .content .details{
+    background: white;
+    padding: 2px 0;
+}
+.featured .container .items .content .details .title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.featured .container .items .content .details .price{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}
+/* FEATURED items-2 */
+.featured .container .items-2 .content{
+    margin: 0 30px;
+    background: lightgrey;
+}
+.featured .container .items-2 .item{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    background-size: cover;
+}
+.featured .container .items-2 .item-4{
+    background-image: url(../Images/Bottle-4.jpg);
+}
+.featured .container .items-2 .item-5{
+    background-image: url(../Images/Bottle-5.jpg);
+}
+.featured .container .items-2 .item-6{
+    background-image: url(../Images/Bottle-6.jpg);
+}
+.featured .container .items-2 .item-7{
+    background-image: url(../Images/Bottle-8);
+}
+.featured .container .items-2 .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.featured .container .items-2 .opacity button{
+    display: block;
+    padding: 5px 10px;
+    background: transparent;
+    font-weight: bold;
+    font-size: 30px;
+    color: gray;
+    border: 2px solid gray;
+    margin: auto;
+    margin-top: 20%;
+    visibility: hidden;
+}
+.featured .container .items-2 .opacity button:hover{
+    color: white;
+    border: 2px solid white;
+}
+.featured .container .items-2 .opacity:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.50)
+}
+.featured .container .items-2 .opacity:hover button{
+    visibility: visible;
+}
+.featured .container .items-2 .content .details{
+    background: white;
+    padding: 2px 0;
+}
+.featured .container .items-2 .title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.featured .container .items-2 .price{
+    text-align: center;
+    font-size: 25px;
+    color: red;
+}                      /* END FEATURED */
+/* about */
+.about{
+    background-image: url(../Images/parallax-2-2050x1146.jpg);
+    background-attachment: fixed;
+    background-position: center;
+ }
+.about .about-bg{
+     position: relative;
+     widows: 100%;
+     height: 100%;
+     overflow-y: hidden;
+ }
+.about .about-text{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     width: 90%;
+     color: white
+ }
+.about .about-word{
+     font-size: 80px;
+     font-family: Roboto Slab;
+     margin-bottom: 0;
+     text-transform: uppercase;
+     padding-bottom: 20px;
+ }
+.about .about-titel{
+     font-size: 20px;
+     font-family: Roboto Slab;
+     font-weight: 600;
+     padding-bottom: 20px;
+ }                      /* END about */
+/* SERVICES */
+.service{
+    background-color: rgb(68, 67, 67);
+ }
+.service .service-text .service-word{
+     text-align: center;
+     color: white;
+     font-size: 60px;
+     font-family: Roboto Slab;
+     padding: 30px 0;
+ }
+.service .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10px;
+ }
+.service .left , .right{
+    width: 50%;
+    padding: 0 0px;
+    text-align: center;
+    margin: 0 15px;
+}
+.service .content .service-titel{
+    font-size: 16px;
+    color: white;
+}                         /* END Welcome */
+/*  Contact */
+.contact .container{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .container h5{
+    text-align: center;
+}
+.contact .container ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact .container ul li{
+    margin: 20px 0;
+}
+.contact .container ul li a{
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+}
+.contact .container ul li a:hover{
+    color: black;
+    transition: 0.3s;
+}
+/* Footer */
+footer{
+    padding: 50px 0;
+    text-align: center;
+    color: grey;
+    height: 100px;
+    border-top: 0.7px solid lightgrey;
+}
+footer .fab{
+    margin-left: 15px;
+    font-size: 25px;
+    color: rgba(196, 194, 194, 0.75);
+}
+footer .fab:hover{
+    color: black;
+    transition: 0.3s;
+}
